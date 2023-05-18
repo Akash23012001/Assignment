@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view</title>
+    <style>
+        table{
+            /* padding: 20px; */
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px;
+            padding: 8px;
+            text-align: left;
+        }
+        #view{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        
+        @media (max-width:600px){
+            .view{
+                flex-direction: column;
+            }
+        }
+        
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <section id="view">
+        <h2>view</h2>
+        <table id="recordTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Email</th>
+                    <th>Terms</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+</body>
+</html>
